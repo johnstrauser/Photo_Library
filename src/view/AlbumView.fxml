@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="355.0" prefWidth="383.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AlbumViewController">
+   <Button fx:id="homePageButton" layoutX="0.0" layoutY="0.0" onAction="#homePageHandler" text="Back to Homepage" />
+
+   <Text fx:id="albName" layoutX="149.0" layoutY="17.0" text="Album Name" />
+   
+   <Button fx:id="logoutButton" layoutX="328.0" onAction="#logoutHandler" text="Logout" />
+   
+   <Button fx:id="addPhotoButton" layoutX="10.0" layoutY="76.0" onAction="#addPhotoHandler" text="Add Photo" />
+   <Button fx:id="slideshowButton" layoutX="198.0" layoutY="76.0" onAction="#slideshowHandler" text="Display Slideshow" />
+   
+   <Text fx:id="photosIn" layoutX="10.0" layoutY="146.0" text="Photos in (Album Name):" />
+   
+   <!-- List of Photos here -->
+   <ScrollPane fx:id="scrollPane" layoutX="10.0" layoutY="161.0" maxHeight="180.0" maxWidth="300.0" minHeight="180.0" minWidth="300.0">
+   <TilePane fx:id="tilePane" hgap="10.0" vgap="10.0">
+   		
+   </TilePane>
+   </ScrollPane>
+   <Button fx:id="renameButton" layoutX="100.0" layoutY="76.0" onAction="#renameHandler" text="Rename" />
+   
+</AnchorPane>

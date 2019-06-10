@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="375.0" prefWidth="545.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminPageController">
+	<Button fx:id="ListUsers" layoutX="14.0" layoutY="162.0" onAction="#ListUserHandler" text="List Users" />
+	<Button fx:id="AddUser" layoutX="14.0" layoutY="304.0" onAction="#AddUserHandler" text="Add User" />
+	<Button fx:id="DeleteUser" layoutX="132.0" layoutY="304.0" onAction="#DeleteUserHandler" text="Delete User" />
+	<Button fx:id="Logout" layoutX="490.0" layoutY="1.0" onAction="#LogoutHandler" text="Logout" />
+	
+	<TextField fx:id="User" layoutX="14.0" layoutY="258.0" prefHeight="32.0" prefWidth="196.0" promptText="Enter User" />
+   	<Text layoutX="240.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin Page" />
+   
+	<ListView fx:id="UserList" layoutX="344.0" layoutY="87.0" prefHeight="217.0" prefWidth="173.0" AnchorPane.bottomAnchor="71.0" AnchorPane.leftAnchor="344.0" AnchorPane.rightAnchor="28.0" AnchorPane.topAnchor="87.0" />
+</AnchorPane>

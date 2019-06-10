@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="422.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CreateAlbumController">
+
+   <TextField fx:id="SearchBox" layoutX="10.0" layoutY="10.0" promptText="" />
+   <TextField fx:id="AlbumName" layoutX="178.0" layoutY="78.0" promptText="Enter Album name.." />
+   
+   <Button fx:id="searchButton" layoutX="200.0" layoutY="10.0" onAction="#searchHandler" text="Search" />
+   
+   <ScrollPane fx:id="scrollPane" layoutX="10.0" layoutY="120.0" maxHeight="180.0" maxWidth="300.0" minHeight="180.0" minWidth="300.0">
+	   <TilePane fx:id="tilePane" hgap="10.0" vgap="10.0">
+	   		
+	   </TilePane>
+   </ScrollPane>
+  
+   
+   
+   
+   <Button fx:id="gobackButton" layoutX="10.0" layoutY="326.0" onAction="#gobackHandler" text="Go Back" />
+   <Button fx:id="logoutButton" layoutX="290.0" onAction="#logoutHandler" text="Logout" />
+   <Button fx:id="confirmButton" layoutX="197.0" layoutY="326.0" onAction="#confirmHandler" text="Confirm Selection" />
+   <Text layoutX="5.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select photos to add to: " wrappingWidth="157.33673095703125" />
+   
+</AnchorPane>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.TilePane?>
+
+<AnchorPane prefHeight="300" prefWidth="300.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomePageController">
+
+   <Button fx:id="searchButton" layoutX="10.0" layoutY="10.0" text="Search" onAction = "#searchHandler" />
+   
+   <Button fx:id="logoutButton" layoutX="290.0" layoutY="0.0" text="Logout" onAction = "#logoutHandler" />
+   
+   <Button fx:id="createAlbumButton" layoutX="10.0" layoutY="50.0" text="Create Album" onAction = "#createAlbumHandler" />
+   <Button fx:id="deleteAlbumButton" layoutX="150.0" layoutY="50.0" text="Delete Album" onAction = "#deleteAlbumHandler" />
+   
+   <Text layoutX="10.0" layoutY="100.0" text="My Albums:"/>
+   
+   <!-- List of Albums here -->
+   <ScrollPane fx:id="scrollPane" layoutX="10.0" layoutY="120.0" maxWidth="300.0" minWidth="300.0" maxHeight="180.0" minHeight="180.0">
+   <TilePane fx:id="tilePane" hgap="10.0" vgap="10.0">
+   		
+   </TilePane>
+   </ScrollPane>
+   
+   <!-- <Button fx:id="AlbumViewButton" layoutX="100.0" layoutY="80.0" text="Temporary: Go To Album View" onAction = "#albumViewHandler" />-->
+</AnchorPane>

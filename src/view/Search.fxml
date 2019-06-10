@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.TilePane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SearchController">
+	<Text layoutX="180.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search Page"/>
+	<children>
+		<Button fx:id="backHome" text="Back to Homepage" onAction="#homeHandler"/>
+		<TextField fx:id="captionField" layoutX="30.0" layoutY="50.0" promptText="Enter caption here" /> 
+		<TextField fx:id="tagField1" layoutX="200.0" layoutY="50.0" promptText="Enter Tag (Tag=Value)" />
+		 <ComboBox fx:id="andor" layoutX="350.0" layoutY="50.0" prefWidth="90.0" promptText="">
+		      <items>
+		        <FXCollections fx:factory="observableArrayList">
+		          <String fx:value="And" />
+		          <String fx:value="Or" />
+		        </FXCollections>
+		      </items>
+	   	 </ComboBox>
+	  <TextField fx:id="tagField2" layoutX="440.0" layoutY="50.0" promptText="Enter Tag (optional)" />
+	  <Text layoutX="30.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date Range:" />
+	  <ComboBox fx:id="fromMonth" layoutX="100.0" layoutY="80.0" prefWidth="80.0" promptText="Month">
+		      <items>
+		        <FXCollections fx:factory="observableArrayList">
+		          <!-- TODO: Add all 12 months to list -->
+		        </FXCollections>
+		      </items>
+	  </ComboBox>
+	  <ComboBox fx:id="fromDay" layoutX="180.0" layoutY="80.0" prefWidth="65.0" promptText="Day">
+		      <items>
+		        <FXCollections fx:factory="observableArrayList">
+		          <!-- TODO: Add all 31 days to list -->
+		        </FXCollections>
+		      </items>
+	  </ComboBox>
+      <ComboBox fx:id="fromYear" layoutX="245.0" layoutY="80.0" prefWidth="70.0" promptText="Year">
+		      <items>
+		        <FXCollections fx:factory="observableArrayList">
+		          <!-- TODO: Add all years to list (Do dynamically in code) -->
+		        </FXCollections>
+		      </items>
+	  </ComboBox>
+	  <ComboBox fx:id="fromHour" layoutX="325.0" layoutY="80.0" prefWidth="70.0" promptText="Hour">
+		      <items>
+		        <FXCollections fx:factory="observableArrayList">
+		          <!-- TODO: Add all 24 hours to list -->
+		        </FXCollections>
+		      </items>
+	  </ComboBox>
+	  <Text layoutX="400.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":" />
+	  <ComboBox fx:id="fromMin" layoutX="405.0" layoutY="80.0" prefWidth="70.0" promptText="Min">
+		      <items>
+		        <FXCollections fx:factory="observableArrayList">
+		          <!-- TODO: Add all 60 mins to list -->
+		        </FXCollections>
+		      </items>
+	  </ComboBox>
+	  <Text layoutX="480.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":" />
+	  <ComboBox fx:id="fromSec" layoutX="485.0" layoutY="80.0" prefWidth="70.0" promptText="sec">
+		      <items>
+		        <FXCollections fx:factory="observableArrayList">
+		          <!-- TODO: Add all 60 secs to list -->
+		        </FXCollections>
+		      </items>
+	  </ComboBox>
+      <Text layoutX="250.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="to" />
+      <ComboBox fx:id="toMonth" layoutX="100.0" layoutY="130.0" prefWidth="80.0" promptText="Month">
+		      <items>
+		        <FXCollections fx:factory="observableArrayList">
+		          <!-- TODO: Add all 12 months to list -->
+		        </FXCollections>
+		      </items>
+	  </ComboBox>
+	  <ComboBox fx:id="toDay" layoutX="180.0" layoutY="130.0" prefWidth="65.0" promptText="Day">
+		      <items>
+		        <FXCollections fx:factory="observableArrayList">
+		          <!-- TODO: Add all 31 days to list -->
+		        </FXCollections>
+		      </items>
+	  </ComboBox>
+      <ComboBox fx:id="toYear" layoutX="245.0" layoutY="130.0" prefWidth="70.0" promptText="Year">
+		      <items>
+		        <FXCollections fx:factory="observableArrayList">
+		          <!-- TODO: Add all years to list (Do dynamically in code) -->
+		        </FXCollections>
+		      </items>
+	  </ComboBox>
+	  <ComboBox fx:id="toHour" layoutX="325.0" layoutY="130.0" prefWidth="70.0" promptText="Hour">
+		      <items>
+		        <FXCollections fx:factory="observableArrayList">
+		          <!-- TODO: Add all 24 hours to list -->
+		        </FXCollections>
+		      </items>
+	  </ComboBox>
+	  <Text layoutX="400.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":" />
+	  <ComboBox fx:id="toMin" layoutX="405.0" layoutY="130.0" prefWidth="70.0" promptText="Min">
+		      <items>
+		        <FXCollections fx:factory="observableArrayList">
+		          <!-- TODO: Add all 60 mins to list -->
+		        </FXCollections>
+		      </items>
+	  </ComboBox>
+	  <Text layoutX="480.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":" />
+	  <ComboBox fx:id="toSec" layoutX="485.0" layoutY="130.0" prefWidth="70.0" promptText="sec">
+		      <items>
+		        <FXCollections fx:factory="observableArrayList">
+		          <!-- TODO: Add all 60 secs to list -->
+		        </FXCollections>
+		      </items>
+	  </ComboBox>
+      
+      <Button layoutX="100.0" layoutY="170.0" mnemonicParsing="false" text="Search" onAction="#searchHandler"/>
+      <Button fx:id="createAlbum" layoutX="200.0" layoutY="170.0" mnemonicParsing="false" text="Create Album w/ Results" onAction="#createAlbumHandler" />
+      
+      
+	
+	</children>
+	
+   <Text layoutX="10.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search Results:"/>
+   <ScrollPane fx:id="scrollPane" layoutX="10.0" layoutY="200.0" maxWidth="580.0" minWidth="580.0" maxHeight="190.0" minHeight="190.0">
+   <TilePane fx:id="tilePane" hgap="10.0" vgap="10.0">
+   		
+   </TilePane>
+   </ScrollPane>
+	
+	
+	
+</AnchorPane>

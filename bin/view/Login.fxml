@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="221.0" prefWidth="256.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   
+   <Text layoutX="90.0" layoutY="30.0" text="Photos Login Page" textAlignment="CENTER" wrappingWidth="206.2434229850769" />
+   <TextField fx:id="Username" layoutX="100.0" layoutY="99.0" promptText="Enter Username" />
+   <Button fx:id="login" layoutX="170.0" layoutY="146.0" onAction="#loginHandler" text="Login" />
+ 
+</AnchorPane>
